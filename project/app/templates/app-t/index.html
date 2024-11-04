@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <script src="{% static "js/script.js" %}" defer></script>
+</head>
+<body>
+    <h1>home page</h1>
+    <p><a href="{% url "login" %}">login</a></p>
+    <p><a href="{% url "register" %}">register</a></p>
+    <img src="{% static "images/pic.png" %}" alt="">
+</body>
+</html>
